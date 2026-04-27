@@ -1,7 +1,7 @@
 import os
 import functools
 
-include_list = ['2013/2014', '2014/2015', '2015/2016', '2016/2017', '2017/2018', '2018/2019', '2019/2020', '2020/2021', '2021/2022', '2022/2023', '2023/2024']
+include_list = ['2013/2014', '2014/2015', '2015/2016', '2016/2017', '2017/2018', '2018/2019', '2019/2020', '2020/2021', '2021/2022', '2022/2023', '2023/2024', '2024/2025', '2025/2026']
 local_prefix = "" # "../"
 prefix_length = 5 # 8
 
@@ -30,13 +30,23 @@ def processTakprogSeason(path):
     return contestDict
 
 def task_compare(x, y):
-    if x[0] == y[0]: 
+    def task_key(task):
+        name = task[0]
+        prefix = name.split(' - ')[0]
+        if len(prefix) > 1 and prefix[0] == 'B' and prefix[1:].isdigit():
+            return (0, int(prefix[1:]), name)
+        if len(prefix) > 1 and prefix[0] == 'A' and prefix[1:].isdigit():
+            return (1, int(prefix[1:]), name)
+        if prefix.isdigit():
+            return (0, int(prefix), name)
+        return (2, 0, name)
+
+    x_key = task_key(x)
+    y_key = task_key(y)
+
+    if x_key == y_key: 
         return 0
-    if x[0][0] == 'B' and y[0][0] == 'A':
-        return -1
-    if x[0][0] == 'A' and y[0][0] == 'B':
-        return +1
-    if x[0] < y[0]:
+    if x_key < y_key:
         return -1
     return +1
 
@@ -92,6 +102,18 @@ def processTakprog(nav):
                 seasons[key1][key2] = sorted(seasons[key1][key2], key=functools.cmp_to_key(task_compare))
                 for key3 in seasons[key1][key2]:
                     nav.write("      - ["+key3[0]+"]("+key3[1]+")\n")
+            if 'piz' in seasons[key1].keys():
+                nav.write("    - PIZ\n")
+                key2 = 'piz'
+                seasons[key1][key2] = sorted(seasons[key1][key2], key=functools.cmp_to_key(task_compare))
+                for key3 in seasons[key1][key2]:
+                    nav.write("      - ["+key3[0]+"]("+key3[1]+")\n")
+            if 'izb' in seasons[key1].keys():
+                nav.write("    - SIO\n")
+                key2 = 'izb'
+                seasons[key1][key2] = sorted(seasons[key1][key2], key=functools.cmp_to_key(task_compare))
+                for key3 in seasons[key1][key2]:
+                    nav.write("      - ["+key3[0]+"]("+key3[1]+")\n")
             if 'ejoi_izb' in seasons[key1].keys():
                 nav.write("    - EJOI izborno\n")
                 key2 = 'ejoi_izb'
@@ -118,4 +140,3 @@ with open(local_prefix + "docs/nav.md", "w") as nav:
     nav.write("  - [Takprog Arhiva](takprog/index.md)\n")
     processTakprog(nav)
     nav.write("- [Materijali](materijali.md)\n")
-
