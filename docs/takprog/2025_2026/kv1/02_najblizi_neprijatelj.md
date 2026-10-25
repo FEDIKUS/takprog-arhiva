@@ -9,7 +9,7 @@ hide:
 	
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| 1000ms | 256MB |
+	| 1000ms | 64MB |
 	
 	Sunce kruži oko centra Mlečnog puta, Zemlja kruži oko Sunca, Mesec kruži oko Zemlje, voda kruži u prirodi, kazaljka na satu se kreće u krug, bubanj veš mašine ima kružni presek i elektroni u najprostijem modelu kruže oko centra atoma. Tako je i najprostije rešenje svih saobraćajnih problema kružni tok.
 	

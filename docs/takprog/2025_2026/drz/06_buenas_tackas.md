@@ -9,7 +9,7 @@ hide:
 	
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| 1000ms | 256MB |
+	| 1500ms | 256MB |
 	
 	O, ne! U toku je intergalaktički konflikt između Marsovaca i Nišovaca! Pomozite Nišovcima da naprave plan napada na Marsovce i time okončaju konflikt!
 	

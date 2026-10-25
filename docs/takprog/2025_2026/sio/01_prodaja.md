@@ -9,7 +9,7 @@ hide:
 
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| — | — |
+	| 1000ms | 64MB |
 
 	Luka je prodavac u radnji misterioznih kutija. Njegova strategija prodaje je neobična: umesto da na svaku kutiju zalepi fiksnu cenu, on pogađa koliko je mušterija spremna da plati, nadajući se da će pogoditi cenu dovoljno nisku da mušterija prihvati, ali i dovoljno visoku da ostvari što veću zaradu.
 
@@ -94,8 +94,6 @@ hide:
 	- U drugom redu $N$ brojeva: $A[i]$.
 
 	Zatim ovaj program poziva vašu funkciju i ispisuje vrednost $Prodaja(N, K, A)$ u jedinom redu izlaza.
-
-	> Vremensko i memorijsko ograničenje nisu navedeni u dostupnom materijalu.
 
 	[Test primeri i prateći fajlovi sa zvaničnog takmičenja](https://nyc3.digitaloceanspaces.com/takprog/2025-26/2025-2026-sio-problems.zip).
 

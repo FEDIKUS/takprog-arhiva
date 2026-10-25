@@ -9,7 +9,7 @@ hide:
 
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| — | — |
+	| 1000ms | 64MB |
 
 	**Ovo je zadatak sa poznatim ulazom**. Više informacija se nalazi u samom tekstu.
 

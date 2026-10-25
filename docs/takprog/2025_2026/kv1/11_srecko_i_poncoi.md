@@ -9,7 +9,7 @@ hide:
 	
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| 1000ms | 256MB |
+	| 1000ms | 512MB |
 	
 	<br> Srećko mnogo voli pončoe i želi da ih donese nazad kući u Kigali. Dato je $n$ pončoa u ponudi i Srećko može za svaki pončo da izabere da li će ga kupiti. Pončo sa rednim brojem $i$ je težak $w_i$ i vredi $v_i$. Nažalost, količina pončoa koje Srećko može da ponese je ograničena. Preciznije, maksimalna ukupna težina svih pončoa koje on može da kupi je $W$. Pomozite Srećku da izabere koje pončoe da kupi tako da je zbir vrednosti pončoa koje je kupio maksimalan. 
 	

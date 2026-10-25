@@ -9,7 +9,7 @@ hide:
 	
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| 1000ms | 256MB |
+	| 2000ms | 512MB |
 	
 	
 	

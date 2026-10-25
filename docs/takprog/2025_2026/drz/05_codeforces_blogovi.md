@@ -9,7 +9,7 @@ hide:
 	
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| 1000ms | 256MB |
+	| 250ms | 256MB |
 	
 	Panta je odlučio da postane bloger na popularnom programerskom sajtu kodforses. Upravo je napisao svoj prvi blog. Blog ima svoju uvaženost, koja je ceo broj. Kada se tek napravi, blog ima uvaženost $0$.
 	

@@ -9,7 +9,7 @@ hide:
 
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| — | — |
+	| 2000ms | 64MB |
 
 	O, ne! Započeo je već drugi po redu konflikt između Nišovaca i Marsovaca! Ovog puta su se umešali i pacifistički orijentisani Baki i Hepiju, starosedaoci Taškenta, kojima su ovi konflikti već dojadili i žele što pre da ga spreče. Pomozite Bakiju i Hepiju da okončaju Intergalaktičke konflikte jednom za svagda tako što ćete predvideti plan napada Marsovaca!
 
@@ -64,8 +64,6 @@ hide:
 	-   U narednom redu $N$ brojeva: $B[i]$.
 
 	Zatim ovaj program zove vašu funkciju i ispisuje rezultat koji vaša funkcija vrati.
-
-	> Vremensko i memorijsko ograničenje nisu navedeni u dostupnom materijalu.
 
 	[Test primeri i prateći fajlovi sa zvaničnog takmičenja](https://nyc3.digitaloceanspaces.com/takprog/2025-26/2025-2026-sio-problems.zip).
 

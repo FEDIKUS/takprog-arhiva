@@ -9,7 +9,7 @@ hide:
 	
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| 1000ms | 256MB |
+	| 1000ms | 64MB |
 	
 	
 	<br> Džek Vrabac je osvojio novi dvodimenzionalni brod, po imenu Levitirajući Tamnjaničar. Brod možemo predstaviti kao Dekartov koordinatni sistem tako da je pramac na $(0,0)$ a krma na $(10^9,0)$. Na brodu ima $n$ jarbola koji se nalaze na udaljenostima $x_1, x_2,\dots ,x_n$ od pramca broda i njihove visine su $h_1, h_2,\dots ,h_n$. Između dva susedna jarbola vezan je magični kanap. Kanap posmatramo kao liniju koja do jednog trenutka ima nagib $-1$, a odatle $+1$ (pogledati sliku, ignorisati strelice). Garantuje se da je uvek moguće povezati dva susedna jarbola magičnim kanapom. Možemo primetiti da se to onda može uraditi na jedinstven način. Džeka interesuje za svaki jarbol koliko mu je blizu najbliži deo na brodu (tačka na jarbolu ili kanapu) koji je barem te visine. Ako nema takvog, ispisati -1. <br>

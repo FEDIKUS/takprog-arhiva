@@ -9,7 +9,7 @@ hide:
 	
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| 1000ms | 256MB |
+	| 3000ms | 256MB |
 	
 	
 	U špilu se nalazi $N$ karata. Karta na vrhu špila ima indeks $1$, a karta ispod karte $i$ ima indeks $i+1$. Na karti $i$ je napisan prirodan broj $a_i$. 

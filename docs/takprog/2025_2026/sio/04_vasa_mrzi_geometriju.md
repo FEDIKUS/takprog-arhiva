@@ -9,7 +9,7 @@ hide:
 
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| — | — |
+	| 500ms | 64MB |
 
 	Vasilije, kao i svaki normalan programer, mrzi geometriju, i našao se u nezgodnoj situaciji.
 
@@ -148,8 +148,6 @@ hide:
 	U sledećem redu nalazi se permutacija $p_1, p_2, \dots, p_N$.
 
 	Zatim ovaj program poziva vašu funkciju `Resi` i štampa povratnu vrednost na ekran. Ukoliko vaše rešenje koristi funkciju `Pitaj` više od $Q$ puta, biće prekinuto sa statusom RTE (runtime error).
-
-	> Vremensko i memorijsko ograničenje nisu navedeni u dostupnom materijalu.
 
 	[Test primeri i prateći fajlovi sa zvaničnog takmičenja](https://nyc3.digitaloceanspaces.com/takprog/2025-26/2025-2026-sio-problems.zip).
 

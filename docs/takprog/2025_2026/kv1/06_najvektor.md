@@ -9,7 +9,7 @@ hide:
 	
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| 1000ms | 256MB |
+	| 1000ms | 64MB |
 	
 	<br> Baki i Srećko se trenutno nalaze u centru Kigalija. Baki iz nama nepoznatih razloga ne voli da bude u blizini Srećka. Budući da Baki ne zna da se snađe u prostoru, potrebna mu je vaša pomoć da se udalji što je više moguće od njega! <br> Kigali se može predstaviti kao Dekartov koordinatni sistem čije apsolutne vrednosti koordinata ne prelaze $10^{18}$. Centar Kigalija je tačka $(0,0)$. Baki ima $n$ različitih mogućnosti za pomeraje i za svaki od njih bira da li će ga izvršiti ili ne. Pomeraj $i$ je određen brojevima $x_i$ i $y_i$. Ako se Baki trenutno nalazi na koordinatama $(X,Y)$, posle pomeraja $i$ će se nalaziti na koordinatama $(X+x_i,Y+y_i)$. Pošto se Srećko ne pomera pomozite Bakiju da izabere koje pomeraje da izvrši tako da maksimizuje Euklidsku distancu od svoje krajnje pozicije do (0,0) tako što ćete ispisati  koliko pomeraja treba da uradi i indekse tih pomeraja.<br> 
 	## Opis ulaza  

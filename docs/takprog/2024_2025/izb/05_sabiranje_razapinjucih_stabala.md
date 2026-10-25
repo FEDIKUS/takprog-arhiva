@@ -9,7 +9,7 @@ hide:
 	
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| 1000ms | 256MB |
+	| 500ms | 256MB |
 	
 	Dat je povezan graf sa $N$ čvorova i $M$ grana. Svaka grana ima svoju vrednost, koja je na početku jednaka $0$. Ptičica sa grane nam je šapnula jednu veoma zanimljivu operaciju. Naime, dozvoljeno nam je da izaberemo bilo koje razapinjuće stablo datog grafa, i da svim granama povećamo vrednost za tačno $1$. Kako vrednosti ne bi mogle da postanu prevelike, dat je i broj $K$. Svaki put kada povećamo vrednost neke grane, ukoliko ona postane tačno $K$, vrednost te grane će se vratiti na $0$.
 	

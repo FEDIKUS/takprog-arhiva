@@ -9,7 +9,7 @@ hide:
 	
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| 1000ms | 256MB |
+	| 4000ms | 256MB |
 	
 	
 	Oh, ne! Na putu do izbornog takmičenja vas je napao legendarni nindža koji nosi kletvu devetorepe licice. Kako on voli ljubav i mrzi mržnju, odlučio je da vas ni pod kojim uslovom ne sme pustiti da učestvujete na predstojećem takmičenju. Zato je iskoristio svoju tajnu tehniku klonova senke kako bi pokrio sve moguće rute za beg.

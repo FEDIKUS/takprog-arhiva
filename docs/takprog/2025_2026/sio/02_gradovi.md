@@ -9,7 +9,7 @@ hide:
 
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| — | — |
+	| 1000ms | 256MB |
 
 	U državi Bajtoviji postoji $N$ mesta koja su povezana sa $M$ dvosmernih puteva. Garantuje se da je moguće stići od bilo kojeg mesta do bilo kog drugog mesta korišćenjem jednog ili više puteva. Put $i$ povezuje mesta $U[i]$ i $V[i]$ i ima dužinu $2^i$. $K$ od datih $N$ mesta su gradovi, dok su preostala sela. *Izolovanost* nekog sela je rastojanje do najbližeg grada.
 
@@ -67,8 +67,6 @@ hide:
 	- U narednom redu $K$ vrednosti koje predstavljaju elemente niza $G$.
 
 	Zatim ovaj program zove vašu funkciju i ispisuje vrednosti $S[1],S[2],$ $...$ $,$ $S[Q]$, koje vaša funkcija upiše u njega.
-
-	> Vremensko i memorijsko ograničenje nisu navedeni u dostupnom materijalu.
 
 	[Test primeri i prateći fajlovi sa zvaničnog takmičenja](https://nyc3.digitaloceanspaces.com/takprog/2025-26/2025-2026-sio-problems.zip).
 

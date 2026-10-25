@@ -9,7 +9,7 @@ hide:
 	
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| 1000ms | 256MB |
+	| 1000ms | 64MB |
 	
 	<br> Nakon što je komisija odlučila da kvalifikacije 2025. godine traju mnogo duže nego inače, takmičarima je, nakon mnogo zadataka, postalo dosadno. Kako bi komisija motivisala takmičare da se vrate nazad na zadatke, odlučila je da napravi trku, čiji je cilj da takmičari odmore svoje moždane vijuge. Naravno, komisija mora da komplikuje sve što radi, pa je odlučila da ova trka ne bude obična. Trka se odvija na teritoriji Srbije, koju naravno, zamišljamo kao beskonačnu ravan (ne brinite, takmičari neće trčati beskonačno dugo).
 	Dato je n početnih tačaka, i iz svake tačke istovremeno, kreće da trči 4 takmičara, po jedan u svakom smeru: severno, južno, istočno i zapadno. Svi takmičari trče istom brzinom, svake sekunde, takmičar koji se nalazio na poziciji (x,y), preći će na poziciju:

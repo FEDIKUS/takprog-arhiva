@@ -9,7 +9,7 @@ hide:
 
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| — | — |
+	| 5000ms | 512MB |
 
 	Petrić je krenuo na IOI i, kao svaki ozbiljan takmičar, poneo je svoju omiljenu igračku, kauboja Gajbišu.
 
@@ -119,8 +119,6 @@ hide:
 	- U petom redu $Q$ brojeva: $k[j]$.
 
 	Zatim ovaj program poziva vašu funkciju i ispisuje vrednosti $ans[1], ans[2], \ldots, ans[Q]$, svaku u posebnom redu.
-
-	> Vremensko i memorijsko ograničenje nisu navedeni u dostupnom materijalu.
 
 	[Test primeri i prateći fajlovi sa zvaničnog takmičenja](https://nyc3.digitaloceanspaces.com/takprog/2025-26/2025-2026-sio-problems.zip).
 

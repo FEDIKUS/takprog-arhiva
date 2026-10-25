@@ -9,7 +9,7 @@ hide:
 	
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| 1000ms | 256MB |
+	| 1500ms | 256MB |
 	
 	Perica se našao u veoma nezgodnoj poziciji. On je od svog profesora dobio niz pozitivnih celih brojeva $A_1, A_2, \cdots, A_N$ dužine $N$. Kako svaka osoba ima svoje preference po pitanju bitovskih operacija, tako i Peričin profesor više voli bitovsku operaciju $and$ u odnosu na operaciju $xor$, što je veoma retka pojava.
 	

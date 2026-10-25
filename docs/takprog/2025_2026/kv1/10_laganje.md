@@ -9,7 +9,7 @@ hide:
 	
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| 1000ms | 256MB |
+	| 500ms | 256MB |
 	
 	Dato je $n$ tačaka u jediničnom kvadratu $[0,1]\times [0,1]$. Skup tih $n$ tačaka zvaćemo $P$. Neka je $MST$ najmanje razapinjuće stablo$^2$ nad kompletnim grafom nad ovim tačkama, gde težinu grana između tačaka $i$ i $j$ sa koordinatama $(x_i,y_i)$ i $(x_j,y_j)$ računamo kao Menhetn distancu, tj. $|x_i-x_j|+|y_i-y_j|$. Garantuje se da je $MST$ nad ovim grafom jedinstven.
 	<br>

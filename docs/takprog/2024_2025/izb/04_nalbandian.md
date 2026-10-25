@@ -9,7 +9,7 @@ hide:
 	
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| 1000ms | 256MB |
+	| 3000ms | 256MB |
 	
 	Tekst zadatka nije dostupan u izvornom direktorijumu.
 	

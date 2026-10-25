@@ -9,7 +9,7 @@ hide:
 	
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| 1000ms | 256MB |
+	| 8500ms | 1024MB |
 	
 	Dat je graf sa $N$ čvorova i $M$ grana, gde svaki čvor $i$ ima vrednost $A_i$. 
 	

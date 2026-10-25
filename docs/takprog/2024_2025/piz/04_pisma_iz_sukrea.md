@@ -9,7 +9,7 @@ hide:
 	
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| 1000ms | 256MB |
+	| 2000ms | 64MB |
 	
 	Kakav bi to fudbaler Tirke bio da nema ljubavnih problema, tek nakon što je stigao u Sukre na IOI (Istraživanje ofsajda u informatici). U današnje vreme bez interneta i mobilnih telefona, jedini način da kontaktira svoju devojku u dalekoj Srbiji jeste slanjem pisma. Put do Sukrea nosi sa sobom razne pustolovine (jahanje konja, plivanje po Amazonu, penjanje uz lijane...) zbog čega je Tirke odlučio da u svojem ljubavnom pismu koristi isključivo nule i jedinice, umesto slova (ne želi saznati šta bi se desilo ukoliko se pismo ošteti, neka slova postanu nečitljiva i njegova devojka ga pogrešno razume).
 	

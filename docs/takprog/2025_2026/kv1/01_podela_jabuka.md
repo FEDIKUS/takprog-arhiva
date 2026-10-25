@@ -9,7 +9,7 @@ hide:
 	
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| 1000ms | 256MB |
+	| 1000ms | 64MB |
 	
 	<br>
 	Tri prijatelja – Don Huan, Selektor i Varijacije – doneli su na izlet određen broj jabuka.

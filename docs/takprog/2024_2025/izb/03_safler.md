@@ -9,7 +9,7 @@ hide:
 	
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| 1000ms | 256MB |
+	| 1500ms | 256MB |
 	
 	Čuveni šafler karata mister Šafl je konačno došao u vaš grad. Da bi ga impresionirali odlučili ste da rešite problem traženja *šaflnesa* špila. Pred tobom se nalazi $N$ karata gde je na $i$-toj karti zapisan broj $A_i$. *Šaflnes* špila predstalja broj mogućih rasporeda karata koji se mogu dobiti primenom zamena karata. Te zamene se ne mogu raditi na bilo koji način, već za svako $1 \leq i \leq N-1$ će se **tačno** jednom zameniti karte $A_i$ i $A_{i+1}$. Naravno, različitim redosledom biranja $i$-ova za zamene, možemo dobiti različite finalne rasporede karata. 
 	

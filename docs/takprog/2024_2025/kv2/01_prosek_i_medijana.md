@@ -9,7 +9,7 @@ hide:
 	
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
-	| 1000ms | 256MB |
+	| 100ms | 64MB |
 	
 	Veljku je dosadno na času matematike i odlučio je da se igra brojevima umesto da sluša profesora. Tokom svoje igre, naišao je na problem koji nije mogao da reši.
 	
