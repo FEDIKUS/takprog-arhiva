@@ -7,6 +7,6 @@ hide:
 
 # Početna
 
-Dobrodošli na sajt inicijative OlympiCode. 
+Takprog Archive je nezvanična arhiva srpskih srednjoškolskih takmičenja iz informatike.
 
-Za sad na njemu možete naći nezvaničnu arhivu srpskih takmičenja iz programiranja, a uskoro i materijale sa olimpijskih priprema *Zlatna Groznica*. Vremenom će biti dodato još korisnih resursa za vaš napredak u takmičarskom programiranju.
+Na sajtu možete naći [zadatke i rešenja od sezone 2013/2014.](takprog/index.md) i [materijale za takmičarsko programiranje](materijali.md).

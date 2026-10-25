@@ -1,5 +1,6 @@
 import os
 import functools
+from pathlib import Path
 
 include_list = ['2013/2014', '2014/2015', '2015/2016', '2016/2017', '2017/2018', '2018/2019', '2019/2020', '2020/2021', '2021/2022', '2022/2023', '2023/2024', '2024/2025', '2025/2026']
 local_prefix = "" # "../"
@@ -49,6 +50,40 @@ def task_compare(x, y):
     if x_key < y_key:
         return -1
     return +1
+
+def writeSeasonOverview(seasons):
+    rounds = {
+        'kv1': 'Kvalifikacije 1', 'kv2': 'Kvalifikacije 2',
+        'kv3': 'Kvalifikacije 3', 'okr': 'Okružno', 'drz': 'Državno',
+        'sio': 'SIO', 'piz': 'PIZ', 'izb': 'Izborno',
+        'ejoi_izb': 'EJOI izborno', 'egoi_izb': 'EGOI izborno',
+    }
+    lines = ['<div class="archive-seasons" markdown>', '']
+    for season in sorted(seasons, reverse=True):
+        if season not in include_list:
+            continue
+        links = []
+        for key, label in rounds.items():
+            tasks = seasons[season].get(key, [])
+            if not tasks:
+                continue
+            first = sorted(tasks, key=functools.cmp_to_key(task_compare))[0]
+            path = Path(first[1]).relative_to('takprog').as_posix()
+            if key == 'kv1' and not seasons[season].get('kv2'):
+                label = 'Kvalifikacije'
+            links.append(f'[{label}]({path})')
+        if links:
+            lines.extend([
+                '<section class="archive-season" markdown>', '',
+                f'### {season}', '', ' '.join(links), '', '</section>', '',
+            ])
+    lines.append('</div>')
+    overview = Path(local_prefix + 'docs/takprog/index.md')
+    before, rest = overview.read_text().split('<!-- seasons:start -->', 1)
+    _, after = rest.split('<!-- seasons:end -->', 1)
+    overview.write_text(before + '<!-- seasons:start -->\n\n' +
+                       '\n'.join(lines) + '\n\n<!-- seasons:end -->' + after)
+
 
 def processTakprog(nav): 
     prefix = local_prefix + "docs/takprog"
@@ -127,6 +162,9 @@ def processTakprog(nav):
                 for key3 in seasons[key1][key2]:
                     nav.write("      - ["+key3[0]+"]("+key3[1]+")\n")
 
+    writeSeasonOverview(seasons)
+
+
 print(os.getcwd())
 with open(local_prefix + "docs/nav.md", "w") as nav:
     nav.write("---\n")
@@ -136,7 +174,8 @@ with open(local_prefix + "docs/nav.md", "w") as nav:
     nav.write("\n")
 
     nav.write("- [Početna](index.md)\n")
-    nav.write("- Takprog\n")
-    nav.write("  - [Takprog Arhiva](takprog/index.md)\n")
+    nav.write("- Arhiva takmičenja\n")
+    nav.write("  - [Pregled sezona](takprog/index.md)\n")
     processTakprog(nav)
     nav.write("- [Materijali](materijali.md)\n")
+    nav.write("- [O arhivi](o-arhivi.md)\n")

@@ -4,8 +4,8 @@ search:
 ---
 
 - [Početna](index.md)
-- Takprog
-  - [Takprog Arhiva](takprog/index.md)
+- Arhiva takmičenja
+  - [Pregled sezona](takprog/index.md)
   - 2013/2014
     - Kvalifikacije 1
       - [1 - Različiti brojevi](takprog/2013_2014/kv1/01_razliciti_brojevi.md)
@@ -470,3 +470,4 @@ search:
       - [3 - Takmičenje](takprog/2025_2026/egoi_izb/03_takmicenje.md)
       - [4 - Tajna matrica](takprog/2025_2026/egoi_izb/04_tajna_matrica.md)
 - [Materijali](materijali.md)
+- [O arhivi](o-arhivi.md)

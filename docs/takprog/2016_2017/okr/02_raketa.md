@@ -66,7 +66,7 @@ hide:
 	|:-:|:-:|:-:|:-:|
 	| Marko Savić | Marko Savić | Marko Savić | Nikola Spasić |
 	
-	Rešenje možete pogledati na sledećoj adresi: [Link](https://github.com/olympicode/olympicode-site/blob/main/docs/takprog/2016_2017/okr/02_raketa-sol.pdf)
+	Rešenje možete pogledati na sledećoj adresi: [Link](02_raketa-sol.pdf)
 	
 	``` cpp title="02_raketa.cpp" linenums="1"
 	#include <iostream>
