@@ -418,12 +418,12 @@ search:
       - [3 - Putešestvije](takprog/2024_2025/kv2/03_putesestvije.md)
       - [4 - Daltonizacija](takprog/2024_2025/kv2/04_daltonizacija.md)
       - [5 - Zanimljivi grafovski upiti](takprog/2024_2025/kv2/05_zanimljivi_grafovski_upiti.md)
-    - PIZ
+    - Kvalifikaciono za izborno (PIZ)
       - [1 - Karte 3](takprog/2024_2025/piz/01_karte_3.md)
       - [2 - Najveća pojava](takprog/2024_2025/piz/02_najveca_pojava.md)
       - [3 - Radoje](takprog/2024_2025/piz/03_radoje.md)
       - [4 - Pisma iz Sukrea](takprog/2024_2025/piz/04_pisma_iz_sukrea.md)
-    - SIO
+    - Izborno
       - [1 - Uzumaki](takprog/2024_2025/izb/01_uzumaki.md)
       - [2 - Mesi](takprog/2024_2025/izb/02_mesi.md)
       - [3 - Šafler](takprog/2024_2025/izb/03_safler.md)
@@ -457,6 +457,13 @@ search:
       - [A1 - Ekskluzivni Kamp](takprog/2025_2026/drz/04_fini_cvorovi.md)
       - [A2 - Kodforses blog](takprog/2025_2026/drz/05_codeforces_blogovi.md)
       - [A3 - Intergalaktički sukob](takprog/2025_2026/drz/06_buenas_tackas.md)
+    - SIO
+      - [1 - Prodaja](takprog/2025_2026/sio/01_prodaja.md)
+      - [2 - Gradovi](takprog/2025_2026/sio/02_gradovi.md)
+      - [3 - Majnkraft Koofa](takprog/2025_2026/sio/03_koofa.md)
+      - [4 - Vasilije mrzi geometriju](takprog/2025_2026/sio/04_vasa_mrzi_geometriju.md)
+      - [5 - Intergalaktički konflikt dva](takprog/2025_2026/sio/05_intergalakticki_konflikt_dva.md)
+      - [6 - Gajbiša](takprog/2025_2026/sio/06_gajbisa.md)
     - EGOI izborno
       - [1 - Raspored](takprog/2025_2026/egoi_izb/01_raspored.md)
       - [2 - Dva tornja](takprog/2025_2026/egoi_izb/02_dva_tornja.md)

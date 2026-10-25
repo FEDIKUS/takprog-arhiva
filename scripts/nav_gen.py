@@ -103,13 +103,13 @@ def processTakprog(nav):
                 for key3 in seasons[key1][key2]:
                     nav.write("      - ["+key3[0]+"]("+key3[1]+")\n")
             if 'piz' in seasons[key1].keys():
-                nav.write("    - PIZ\n")
+                nav.write("    - Kvalifikaciono za izborno (PIZ)\n")
                 key2 = 'piz'
                 seasons[key1][key2] = sorted(seasons[key1][key2], key=functools.cmp_to_key(task_compare))
                 for key3 in seasons[key1][key2]:
                     nav.write("      - ["+key3[0]+"]("+key3[1]+")\n")
             if 'izb' in seasons[key1].keys():
-                nav.write("    - SIO\n")
+                nav.write("    - Izborno\n")
                 key2 = 'izb'
                 seasons[key1][key2] = sorted(seasons[key1][key2], key=functools.cmp_to_key(task_compare))
                 for key3 in seasons[key1][key2]:

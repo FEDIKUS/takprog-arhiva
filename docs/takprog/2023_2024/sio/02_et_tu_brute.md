@@ -87,14 +87,22 @@ hide:
 	Ukoliko vas interesuju zadaci sa XVIII SIO:
 	
 	<p style="text-align: center;">
-	<img src="02_et_tu_brute-sio.png" >
+
+
+	![Ilustracija zadatka](02_et_tu_brute-sio.png)
+
+
 	</p>
 	
 	Rezultat koji je Gaj Julije Cezar ostvario na istom
 	 
 	 <p style="text-align: center;">
 	 
-	<img src="02_et_tu_brute-rez.png" >
+
+
+	![Ilustracija zadatka](02_et_tu_brute-rez.png)
+
+
 	
 	</p>
 	

@@ -111,7 +111,7 @@ hide:
 	
 	## Svi $y_i$ su jednaki
 	
-	Kako je svima $y$ koordinata ista, pozdraviće se oni parovi koji su udaljeni za paran broj pozicija (po $x$ koordinati). To su samo oni parovi kojima je $x$ koordinata parna i oni parovi kojima je $x$ koordinata neparna. Rešenje je dato formulom ${\text{broj parnih x}\choose{2}}\cdot{\text{broj neparnih x}\choose{2}}$ (${a}\choose{b}$ predstavlja [binomni koeficijent](https://sr.wikipedia.org/sr-ec/%D0%91%D0%B8%D0%BD%D0%BE%D0%BC%D0%BD%D0%B8_%D0%BA%D0%BE%D0%B5%D1%84%D0%B8%D1%86%D0%B8%D1%98%D0%B5%D0%BD%D1%82), odnosno za $b=2$ je samo $\frac{a\cdot\left(a-1\right)}{2}$) i vremenska složenost je $\mathcal{O}\left(N\right)$ jer samo treba da izbrojimo broj parnih i broj neparnih $x$ koordinata.
+	Kako je svima $y$ koordinata ista, pozdraviće se oni parovi koji su udaljeni za paran broj pozicija (po $x$ koordinati). To su samo oni parovi kojima je $x$ koordinata parna i oni parovi kojima je $x$ koordinata neparna. Rešenje je dato formulom $\binom{\text{broj parnih }x}{2}+\binom{\text{broj neparnih }x}{2}$ (${a}\choose{b}$ predstavlja [binomni koeficijent](https://sr.wikipedia.org/sr-ec/%D0%91%D0%B8%D0%BD%D0%BE%D0%BC%D0%BD%D0%B8_%D0%BA%D0%BE%D0%B5%D1%84%D0%B8%D1%86%D0%B8%D1%98%D0%B5%D0%BD%D1%82), odnosno za $b=2$ je samo $\frac{a\cdot\left(a-1\right)}{2}$) i vremenska složenost je $\mathcal{O}\left(N\right)$ jer samo treba da izbrojimo broj parnih i broj neparnih $x$ koordinata.
 	
 	## $\left|x_i\right|,\left|y_i\right|\leq 1000$
 	

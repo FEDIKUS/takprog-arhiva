@@ -83,7 +83,11 @@ hide:
 	
 	Imamo 4 kružna toka i gradimo 5 puteva. Ako izgradimo puteve kao na slici, stanovnici će za kretanje izabrati puteve sa kvalitetom kaldrme $1$, $2$ i $4$, čiji je zbir $7$. Može se dokazati da je nemoguće napraviti veći zbir, pa je rešenje $7$.
 	
-	<img src="07_mst-primer.png" width="500"/>
+
+
+	![Ilustracija zadatka](07_mst-primer.png)
+
+
 	
 	<br>
 	

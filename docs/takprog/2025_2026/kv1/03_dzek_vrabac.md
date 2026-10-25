@@ -33,7 +33,11 @@ hide:
 	 ```  
 	### Objašnjenje  
 	Slika odgovara ovom primeru. Jarboli su obeleženi sa $A,B,C$ . Tačka $X$ je najbliža tačka koja je viša ili jednaka od $B$. Za $C$ nemamo takvu, a za $A$ će biti tačka (5,4).
-	 <br> <br><img src="03_dzek_vrabac-jarboli.png" width="50%" style="display:block; margin-left:0;"><br>
+
+
+	![Ilustracija zadatka](03_dzek_vrabac-jarboli.png)
+
+	<br>
 	
 	## Ograničenja  
 	- $1 \leq n \leq 10^7$  

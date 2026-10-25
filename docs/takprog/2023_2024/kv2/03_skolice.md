@@ -126,7 +126,7 @@ hide:
 	
 	| Autor | Tekst i test primeri | Analiza rеšenja | Testiranje |
 	|:-:|:-:|:-:|:-:|
-	| Aleksandar Višnjić | Aleksandar Višnjić | Aleksandar Višnjić | Igor Pavlović |
+	| Aleksandar Višnjić | Aleksandar Višnjić | Igor Pavlović | Aleksandar Višnjić |
 	
 	## Rešenje kada $A_i = 1$
 	Stajanje na bilo koji stepenik ima istu "cenu". Potrebno je stati na ukupno što je manje moguće stepenika. Rešenje zavisi samo od dužine niza za igru. Za svaki upit je zasebno računamo i neka ona iznosi $M_i$ kod $i$-tog druga. Rešenje kod istog je $\lfloor \frac{M_i}{2} \rfloor$.

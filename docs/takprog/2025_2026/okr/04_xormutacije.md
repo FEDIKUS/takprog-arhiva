@@ -133,8 +133,23 @@ hide:
 	<br> 
 	
 === "Rešenje"
-	
+
 	| Autor | Tekst i test primeri | Analiza rešenja | Testiranje |
 	|:-:|:-:|:-:|:-:|
-	|  |  |  |  |
+	| Miloš Milutinović | Miloš Milutinović | Miloš Milutinović | Aleksa Milisavljević |
 	
+	## Rešenje kada $N, Q \leq 10$
+
+	Možemo za svaki podniz izabrati koje elemente želimo da koristimo u nizu, i za dobijeni niz proverimo da li je on dobar koristeći grubu silu. Složenost $O(Q N^2 2^N).$
+
+	## Rešenje kada su svi elementi stepeni dvojke
+
+	Primetimo da ako uzmemo dva ista elementa za njih očigledno važi $X = X \ and \ X > X \ xor \ X = 0$. Takođe ukoliko uzmemo dva različita elementa za njih važi $0 = X \ and \ Y < X \ xor \ Y = X + Y$. Time se dobija da je dovoljno naći element koji se najviše puta pojavljuje. To se može uraditi tako što se svaki član niza zameni kao $A_i = log_2{A_i}$. Kako je sada $0 \leq A_i \leq 30$, možemo napraviti prefiksne sume po broju pojavljivanja svakog elementa i odgovoriti upite lako. Složenost $O((N + Q) log_2{A})$.
+
+	## Rešenje kada $N, Q \leq 5000$
+
+	Ukoliko izaberemo dva elementa čiji su najveći bitovi različiti, tada uslov očigledno neće važiti, jer $and$ neće sadržati taj bit dok $xor$ hoće. Slično ukoliko su im najveći bitovi isti, $and$ će sadržati taj bit dok $xor$ neće. Time dobijamo uslov da je niz dobar ukoliko svaki par brojeva ima isti najveći bit. Sada svaki član niza zamenimo njegovim najvećim bitom. Za svaki upit potrebno je odgovoriti sa najvećim brojem pojavljivanja nekog elementa u podnizu. To možemo lako uraditi grubom silom. Složenost $O(N Q)$.
+
+	## Glavno rešenje
+
+	Kombinovaćemo prethodne dve ideje. Nakon zamene svakog elementa sa njegovim najvećim bitom važiće $0 \leq A_i \leq 30$. Sada možemo napraviti prefiksne sume kao u podzadatku gde je svaki element stepen dvojke i na isti način odgovoriti upite. Složenost $O((N + Q) log_2{A})$.

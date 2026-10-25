@@ -80,7 +80,7 @@ hide:
 	
 	| Autor | Tekst i test primeri | Analiza rеšenja | Testiranje |
 	|:-:|:-:|:-:|:-:|
-	| Aleksa Milisavljević | Igor Pavlović | Aleksandar Višnjić | Aleksandar Višnjić |
+	| Aleksandar Višnjić | Aleksa Milisavljević | Aleksandar Višnjić | Aleksandar Višnjić |
 	
 	## Prva dva podzadatka
 	Izvršavamo direktnu simulaciju svih upita. Neka su $k$ i $x$ trenutni parametri upita. Ukoliko je $A_k + x \leq C_k$, tada jednostavno dodajemo $x$ na $A_k$ i završavamo upit. U suprotnom, $x$ smanjujemo za $C_k-A_k$, a na vrednost $A_k$ upisujemo $C_k$. Potom povećavamo $k$ za $1$ i nastavljamo izvršavanje upita sa novim vrednostima. Ukoliko izađemo iz niza, svakako prekidamo izvršavanje upita.
@@ -91,9 +91,9 @@ hide:
 	## Glavno rešenje
 	Primetimo da redosled izvršavanja upita nije bitan. To znači da možemo prvo učitati sve upite, a potom ih odjednom sve izvršiti. Tačnije, za svaki upit sa parametrima $k$ i $x$ najpre dodamo $x$ na $A_k$ bez vođenja računa o $C_k$. 
 	
-	Kada to uradimo za svaki upit, dovoljno je proći jednom po celom nizu sleva nadesno i ažurirati vrednosti $A_k$. Za trenutni indeks $k$, ako je $A_k> C_k$,Wdodajemo $A_k-C_k$ na $A_{k+1}$, a zatim na vrednost $A_k$ upisujemo $C_k$. U suprotnom, ne radimo ništa. Napomenimo da ako je $k= $ (krajwniza), nije potrebno ažurirati[$A_{+1}$.
+	Kada to uradimo za svaki upit, dovoljno je proći jednom po celom nizu sleva nadesno i ažurirati vrednosti $A_k$. Za trenutni indeks $k$, ako je $A_k > C_k$, dodajemo $A_k-C_k$ na $A_{k+1}$, a zatim na vrednost $A_k$ upisujemo $C_k$. U suprotnom, ne radimo ništa. Napomenimo da ako je $k = N$ (kraj niza), nije potrebno ažurirati $A_{N+1}$.
 	
-	Složenost prolaska po svim upitima je $O(Q)$, dok je složenost jednog prolaska po celom nizu $O(hN)$ Ukupna složenost je $O(N+Qi.$
+	Složenost prolaska po svim upitima je $O(Q)$, dok je složenost jednog prolaska po celom nizu $O(N)$. Ukupna složenost je $O(N+Q)$.
 	
 	``` cpp title="02_moramo_da_recikliramo.cpp" linenums="1"
 	#include <bits/stdc++.h>

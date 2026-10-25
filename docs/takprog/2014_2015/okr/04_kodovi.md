@@ -10,6 +10,8 @@ hide:
 	| Vremensko ograničenje | Memorijsko ograničenje |
 	|:-:|:-:|
 	| 500ms | 64MB |
+
+	> Tekst zadatka trenutno nedostaje u arhivi. U kartici „Rešenje” dostupan je izvorni kod.
 	
 	
 === "Rešenje"

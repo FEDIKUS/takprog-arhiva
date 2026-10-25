@@ -65,18 +65,22 @@ hide:
 
 	* U prvom upitu tipa $2$ ne postoji šetnja između čvora $1$ i čvora $3$ takva da karakteri sa šetnje formiraju palindrom. 
 	* U drugom upitu tipa $2$ postoji šetnja između čvora $2$ i čvora $3$ takva da karakteri sa šetnje formiraju palindrom. Ta šetnja je: $2 - 3$, a formirani palindrom je `b`.
-	* U trećem upitu tipa $2$ postoji šetnja između čvora $3$ i čvora $4$ takva da karakteri sa šetnje formiraju palindrom. Ta šetnja je $1 - 2 - 3 - 4$, a formirani palindrom je `aba`.
+	* U trećem upitu tipa $2$ postoji šetnja između čvora $1$ i čvora $4$ takva da karakteri sa šetnje formiraju palindrom. Ta šetnja je $1 - 2 - 3 - 4$, a formirani palindrom je `aba`.
 	
 	
 === "Rešenje"
 	
 	| Autor | Tekst i test primeri | Analiza rеšenja | Testiranje |
 	|:-:|:-:|:-:|:-:|
-	| Aleksa Milisavljević | Aleksa Milisavljević | Aleksa Milisavljević | nPavle Martinović |
+	| Aleksa Milisavljević | Aleksa Milisavljević | Aleksa Milisavljević | Pavle Martinović |
 	
 	##  Rešenje kada je u svakom upitu $c$ = `a`
 	
 	U ovom podzadatku je svaka šetnja palindrom. Dovoljno je proveriti da li su dva čvora u istoj komponenti povezanosti.  Ovo možemo da postignemo tako što koristimo čuvamo kojoj komponenti pripada koji čvor. Svaki upit u kojem se granom povezuju dva čvora iz iste komponente ignorišemo. Kada se spajaju dva čvora iz različitih komponenti, dodajemo novu granu između njih i puštamo `bfs` u kojem sve čvorove do kojih je moguće stići do jednog iz ta dva stavljamo u istu komponentu. Ovo rešenje radi u složenosti $O(N^2 + Q)$. Za bolju složenost je potrebno koristiti adekvatnu strukturu, npr. `dsu (disjoint set union)`.
+
+	## Rešenje kada je u svakom upitu prvog tipa $v = u + 1$
+
+	U ovom podzadatku je opisani graf zapravo niz. Potrebno je proveriti da li je za dati podniz moguća palindromska šetnja od jednog do drugog kraja. Palindromska šetnja postoji ukoliko pri kompresiji uzastopnih istih karaktera dobijamo palindrom i ako su odgovarajući naspramni karkteri nastali kompresijom podniza uzastopnih iste parnosti. Ovo možemo uraditi tako što unapred izračunamo koji će parovi formirati palindromsku šetnju nakon svih upita u složenosti $O(N^2)$. Potom procesiramo upite. Posle svakog ažuriranja vodimo računa o komponentama povezanosti (koristeći `dsu` ili puštajući `bfs` nakon svakog upita). Ovo rešenje radi u složenosti $O(N^2 + Q)$.
 	
 	##  Rešenje kada $N \leq 100$
 	

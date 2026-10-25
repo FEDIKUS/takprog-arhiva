@@ -131,7 +131,7 @@ hide:
 	
 	| Autor | Tekst i test primeri | Analiza rеšenja | Testiranje |
 	|:-:|:-:|:-:|:-:|
-	| Vladimir Milovanović | Aleksandar Višnjić | Aleksandar Višnjić | Aleksandar Višnjić |
+	| Vladimir Milovanović | Aleksandar Višnjić | Aleksandar Višnjić | Dragan Urošević |
 	
 	## Rešenje kada $N\leq 100$
 	Prolazimo po podnizovima uzastopnih učenika preko dve ugnežđene petlje. Zatim za svaki podniz proveravamo da li je usamljen ili ne. Broj podnizova je $O(N^2)$, a složenost provere za svaki je $O(N)$. Stoga je ukupna vremenska složenost $O(N^3)$.
@@ -155,7 +155,7 @@ hide:
 	## Glavno rešenje
 	Prethodnu iteraciju zamenjujemo matematičkom formulom. Za svakog učenika prebrojavamo broj slika koje je pocepao. Primetimo da ne postoji slika koja je pocepana od strane dva ili više učenika, pošto svaka slika dužine barem $3$ ima najviše jednog usamljenog učenika.
 	
-	Neka su $F_1 < F_2 < \ldots < F_K$ pozicije svih fizičara. Za $1 < i < K$ važi da je fizičar $i$ pocepao slike koje predstavljaju pod-intervale $[L,R] \subseteq [F_{i-1}+1,F_{i+1}-1]$ koji sadrže $i$. Tačnije, važi $F_{i+1}+1 \leq L \leq F_i$ i $F_i \leq R \leq F_{i+1}-1$. 
+	Neka su $F_1 < F_2 < \ldots < F_K$ pozicije svih fizičara. Za $1 < i < K$ važi da je fizičar $i$ pocepao slike koje predstavljaju pod-intervale $[L,R] \subseteq [F_{i-1}+1,F_{i+1}-1]$ koji sadrže $i$. Tačnije, važi $F_{i-1}+1 \leq L \leq F_i$ i $F_i \leq R \leq F_{i+1}-1$.
 	
 	* Za $L$ imamo $F_i - F_{i-1}$ opcija;
 	* Za $R$ imamo $F_{i+1}-F_i$.
