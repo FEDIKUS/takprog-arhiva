@@ -1,29 +1,23 @@
 # Takprog Archive
 
-Nezvanična arhiva zadataka i rešenja sa srpskih srednjoškolskih takmičenja iz informatike, uz materijale za takmičarsko programiranje. Sajt koristi Material for MkDocs, sa izgledom inspirisanim [Takprog sajtom](https://takprog.petlja.org/srednjaskola).
+Nezvanična arhiva zadataka i rešenja sa srpskih srednjoškolskih takmičenja iz informatike.
 
-## Lokalni pregled
+## Pokretanje
 
 ```sh
-python3 -m venv .venv
-source .venv/bin/activate
-pip install mkdocs-material mkdocs-literate-nav
-python3 scripts/nav_gen.py
+docker network create web  # samo ako mreža ne postoji
+docker compose up -d --build
+```
+
+Arhiva je dostupna na `http://localhost:8083/arhiva/`. Docker image gradi statički sajt i služi ga preko Nginx-a.
+
+Za lokalni razvoj:
+
+```sh
+pip install -r requirements-archive.txt
 mkdocs serve
 ```
 
-Pre objavljivanja proverite izgradnju komandom `mkdocs build --strict`. Navigaciju i pregled sezona generiše `scripts/nav_gen.py` iz zadataka u `docs/takprog/`.
+## Izvori
 
-GitHub Actions objavljuje sajt na GitHub Pages pri izmeni grane `main` ili `master`. Domen nije unapred podešen; ako koristite sopstveni domen, podesite ga u GitHub Pages i dodajte odgovarajući `docs/CNAME`.
-
-Ispravke i dopune predložite u [repozitorijumu](https://github.com/FEDIKUS/olympicode-site).
-
-## Prednost izvora
-
-Pri usaglašavanju sadržaja i zasluga, originalne Takprog arhive imaju prednost nad kopijama u Olympicode repozitorijumu: te arhive su izvor zvaničnih rešenja objavljenih na Algori. Pre usaglašavanja autora analize proverite da li je u pitanju ista analiza. Autor ideje zadatka, autor teksta i testova, autor analize i tester ostaju odvojene uloge.
-
-## Poreklo arhive
-
-Arhiva je nastala na osnovu [Olympicode arhive](https://github.com/olympicode/olympicode-site), koju su sakupili, organizovali i uredili Mladen Puzić, Aleksandar Višnjić i Bogdan Petrović.
-
-Pojedinačne zasluge navedene su uz zadatke i materijale. Repozitorijum zadržava izvornu licencu [CC BY-SA 4.0](LICENSE).
+Arhiva je nastala na osnovu [Olympicode arhive](https://github.com/olympicode/olympicode-site), koju su sakupili i uredili **Mladen Puzić**, Aleksandar Višnjić i Bogdan Petrović. Zadržana je izvorna [CC BY-SA 4.0 licenca](LICENSE). Pojedinačne zasluge navedene su uz zadatke.

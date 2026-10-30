@@ -1,0 +1,36 @@
+name: takprog-archive
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile.nginx
+    restart: unless-stopped
+    networks:
+      - takprog
+      - web
+    ports:
+      - "${ARCHIVE_BIND:-127.0.0.1}:${ARCHIVE_PORT:-8083}:8080"
+    read_only: true
+    tmpfs:
+      - /tmp:size=192m,mode=1777
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 64
+    mem_limit: 256m
+    healthcheck:
+      test: [CMD, wget, -q, -O, /dev/null, http://127.0.0.1:8080/arhiva/]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
+
+
+networks:
+  takprog:
+    internal: true
+  web:
+    name: web
+    external: true

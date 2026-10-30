@@ -12,6 +12,8 @@ window.MathJax = {
   };
   
   document$.subscribe(() => { 
-    MathJax.typesetPromise()
+    // The configuration can load before the deferred MathJax runtime.
+    // Its initial startup handles this page; subsequent navigation uses typesetPromise.
+    if (typeof MathJax.typesetPromise === "function") MathJax.typesetPromise()
   })
   

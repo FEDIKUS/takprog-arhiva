@@ -1,0 +1,13 @@
+*
+!requirements-archive.txt
+!mkdocs.yml
+!docs/
+!docs/**
+!overrides/
+!overrides/**
+!deploy/
+!deploy/nginx.conf
+!deploy/Dockerfile.nginx
+**/__pycache__
+**/*.pyc
+**/.DS_Store
